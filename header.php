@@ -10,34 +10,29 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Blog Template for Bootstrap</title>
+    <title><?php wp_title();?></title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="<?php echo get_template_directory_uri() . " /blog.css " ;?>" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="<?php echo get_template_directory_uri() . '/blog.css ' ;?>" rel="stylesheet">
+    <?php wp_head();?>
 </head>
 
 <body>
     <div class="blog-masthead">
-       <?php wp_nav_menu(array(
-            "menu_class" => "container",
-            "container" => "nav",
-            "container_class" => "blog-nav",
-            "theme_location" => "meu-menu",
-        ));?>
+       <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                   <?php wp_nav_menu(array(
+                        "menu_class" => "container",
+                        "container" => "nav",
+                        "container_class" => "blog-nav",
+                        "theme_location" => "meu-menu",
+                    ));?>
+                </div>
+                <div class="col-md-6 text-right">
+                    <?php get_search_form();?>
+                </div>
+            </div>
+        </div>
     </div>

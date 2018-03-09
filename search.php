@@ -1,12 +1,10 @@
 <?php get_header();?>
-    
-    <div class="blog-header">
+   <div class="blog-header">
        <div class="container">
            <h1 class="blog-title"><a href="<?php echo get_page_link(220);?>">The Minimalist Blog</a></h1>
             <p class="lead blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
-    
     <div class="container">
     <div class="row">
 
@@ -17,16 +15,17 @@
                         the_post();
             ?>
             <div class="blog-post">
-                <h2 class="blog-post-title"><?php the_title();?></h2>
-                <p class="blog-post-meta"><?php echo get_the_date();?> by <a href="<?php the_permalink();?>"><?php the_author();?></a></p>
-                <p><?php the_content();?></p>
+                <h2 class="blog-post-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+                <p><span>Categories:</span> <?php the_category(", ");?></p>
+                <p><?php the_excerpt();?></p>
             </div>
             <?php
                     }
             ?>
             <div class="pager">
-                <?php wp_link_pages();?>
-            </div>
+                <?php next_posts_link("<p><i class='far fa-arrow-alt-circle-left'></i>Previous</p>");?>
+                <?php previous_posts_link("<p>Next<i class='far fa-arrow-alt-circle-right'></i></p>");?>
+            </div>    
             <?php
                 }
             ?>

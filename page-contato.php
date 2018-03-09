@@ -1,12 +1,11 @@
-<?php get_header();?>
-    
-    <div class="blog-header">
+<?php get_header();
+?>
+   <div class="blog-header">
        <div class="container">
-           <h1 class="blog-title"><a href="<?php echo get_page_link(220);?>">The Minimalist Blog</a></h1>
+            <h1 class="blog-title">Contact</h1>
             <p class="lead blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
     </div>
-    
     <div class="container">
     <div class="row">
 
@@ -17,20 +16,13 @@
                         the_post();
             ?>
             <div class="blog-post">
-                <h2 class="blog-post-title"><?php the_title();?></h2>
-                <p class="blog-post-meta"><?php echo get_the_date();?> by <a href="<?php the_permalink();?>"><?php the_author();?></a></p>
                 <p><?php the_content();?></p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.1268069289786!2d-81.56606268556897!3d28.385237701982405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7ee634caa5f7%3A0xa71e391fd01cf1a0!2sWalt+Disney+World+Resort!5e0!3m2!1spt-BR!2sbr!4v1520556790798" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <?php
                     }
-            ?>
-            <div class="pager">
-                <?php wp_link_pages();?>
-            </div>
-            <?php
                 }
             ?>
-
         </div>
         <!-- /.blog-main -->
 
