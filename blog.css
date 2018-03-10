@@ -6,6 +6,13 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
 }
+a{
+  color:#9b59b6;  
+}
+
+a:hover{
+    color:#8e44ad;
+}
 
 h1,
 .h1,
@@ -46,17 +53,13 @@ ul{
  * Masthead for nav
  */
 
-nav{
-    
-}
-
 .blog-masthead {
     position:fixed;
     z-index:1;
     width:100%;
     font-size:1.2rem;
     text-transform: uppercase;
-    background-color: #2f3542;
+    background-color:#9b59b6;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
     box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
 }
@@ -174,13 +177,6 @@ nav{
     display:flex;
     justify-content: space-between;
 }
-.pager a{
-    color:#57606f
-}
-
-.pager a:hover{
-    color:#2f3542;
-}
 
 
 /*
@@ -223,14 +219,6 @@ nav{
 
 .blog-footer p:last-child {
     margin-bottom: 0;
-}
-
-h2 a, li a,p a,h4 a{
-    color:#57606f;
-}
-
-h2 a:hover,li a:hover, p a:hover, h4 a:hover{
-    color:#2f3542;
 }
 
 .attachment-post-thumbnail{
