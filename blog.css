@@ -278,3 +278,31 @@ form button{
     margin-left:-6px;
     cursor:pointer;
 }
+
+/*Comentarios*/
+
+#submit{
+    background:#2f3542;
+    color:white;
+    cursor:pointer;
+}
+
+#submit:hover{
+    background:#57606f;
+}
+
+.comment-form-comment label{
+    display:none; 
+}
+
+#comment{
+    width:100%;
+}
+
+.fn,.comment-meta a:first-child, .comment-reply-link{
+    font-weight: bolder;
+}
+
+ol.commentlist{
+    list-style: none;
+}

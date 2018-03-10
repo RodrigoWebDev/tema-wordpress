@@ -2,8 +2,7 @@
 ?>
    <div class="blog-header">
        <div class="container">
-            <h1 class="blog-title">About</h1>
-            <p class="lead blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h1 class="blog-title"><?php the_title();?></h1>
         </div>
     </div>
     <div class="container">

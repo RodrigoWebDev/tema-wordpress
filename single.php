@@ -2,8 +2,8 @@
     
     <div class="blog-header">
        <div class="container">
-           <h1 class="blog-title"><a href="<?php echo get_page_link(220);?>">The Minimalist Blog</a></h1>
-            <p class="lead blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+           <h1 class="blog-title"><a href="<?php  echo get_page_link(220); ?>"><?php bloginfo("name"); ?></a></h1>
+            <p class="lead blog-description"><?php bloginfo("description")?></p>
         </div>
     </div>
     
@@ -23,13 +23,14 @@
             </div>
             <?php
                     }
+            wp_link_pages();
             ?>
-            <div class="pager">
-                <?php wp_link_pages();?>
-            </div>
             <?php
                 }
             ?>
+            <hr>
+            <?php comments_template();?>
+
 
         </div>
         <!-- /.blog-main -->
