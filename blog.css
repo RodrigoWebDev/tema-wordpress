@@ -14,6 +14,10 @@ a:hover{
     color:#8e44ad;
 }
 
+hr{
+    padding:2rem 0;
+}
+
 h1,
 .h1,
 h2,
@@ -293,4 +297,10 @@ form button{
 
 ol.commentlist{
     list-style: none;
+}
+
+/*Paginacao*/
+.pagination{
+   flex-direction: column;
+   text-align: center;
 }

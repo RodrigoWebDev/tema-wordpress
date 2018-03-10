@@ -12,24 +12,28 @@
 
         <div class="col-sm-9 blog-main">
             <?php 
-                if(have_posts()){
-                    while(have_posts()){
-                        the_post();
+                while(have_posts()){
+                    the_post();
             ?>
             <div class="blog-post">
                 <h2 class="blog-post-title"><?php the_title();?></h2>
                 <p class="blog-post-meta"><?php echo get_the_date();?> by <a href="<?php the_permalink();?>"><?php the_author();?></a></p>
                 <p><?php the_content();?></p>
             </div>
-            <?php
-                    }
-            wp_link_pages();
-            ?>
-            <?php
-                }
-            ?>
+             <div class="pager">
+                <div>
+                    <?php previous_post_link(); ?>
+                </div>
+                <div>
+                    <?php next_post_link(); ?>
+                </div>
+            </div>
             <hr>
-            <?php comments_template();?>
+            <?php
+              comments_template();
+            }
+            ?>
+            
 
 
         </div>

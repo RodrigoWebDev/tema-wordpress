@@ -21,11 +21,14 @@
             </div>
             <?php
                     }
+                    the_posts_pagination(
+                    array(
+                        "prev_text" => "Previous",
+                        "next_text" => "Next",
+                        "screen_reader_text" => "Post navigation" 
+                    )
+                );
             ?>
-            <div class="pager">
-                <?php next_posts_link("<p><i class='far fa-arrow-alt-circle-left'></i>Previous</p>");?>
-                <?php previous_posts_link("<p>Next<i class='far fa-arrow-alt-circle-right'></i></p>");?>
-            </div>    
             <?php
                 }
             ?>
