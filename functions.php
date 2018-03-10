@@ -1,4 +1,5 @@
 <?php
+remove_action("wp_head","wp_generator");
 register_nav_menus(
     array(
         "meu-menu" => "Menu principal"

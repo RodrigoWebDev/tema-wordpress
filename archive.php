@@ -10,6 +10,11 @@
 
         <div class="col-sm-9 blog-main">
             <?php 
+                the_archive_title("<h1 class='archive-title'>","</h1>");
+                the_archive_description();
+            ?>
+            <hr>
+            <?php
                 if(have_posts()){
                     while(have_posts()){
                         the_post();

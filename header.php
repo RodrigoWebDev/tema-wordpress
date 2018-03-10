@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes();?>>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php echo bloginfo("charset");?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
+    <meta name="description" content="<?php bloginfo("description")?>">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title><?php wp_title();?></title>
+    <title><?php bloginfo("name");?><?php wp_title(" | ");?></title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 

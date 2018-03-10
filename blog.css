@@ -5,17 +5,19 @@
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
+    position:relative;
 }
+
+#wpadminbar{
+    display:none;
+}
+
 a{
   color:#9b59b6;  
 }
 
 a:hover{
     color:#8e44ad;
-}
-
-hr{
-    padding:2rem 0;
 }
 
 h1,
@@ -59,9 +61,10 @@ ul{
 
 .blog-masthead {
     position:fixed;
+    top:0;
     z-index:1;
     width:100%;
-    font-size:1.2rem;
+    padding:0.8rem;
     text-transform: uppercase;
     background-color:#9b59b6;
     -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
@@ -123,8 +126,8 @@ ul{
  */
 
 .blog-header {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin-top:38px;
+    padding: 40px 0;
     background:url(img/bg-header.jpg) no-repeat center center fixed;
     background-size:cover;
 }
@@ -211,6 +214,7 @@ ul{
 .blog-sidebar{
     background:#F5F5F5;
     border:1px dashed #57606f;
+    height:100%;
 }
 
 .blog-footer {
@@ -233,6 +237,11 @@ ul{
 .blog-post img{
     width:100%;
     height:auto;
+}
+
+.blog-post img:hover{
+    opacity: 0.8;
+    transition:.2s;
 }
 
 .blog-post span{
@@ -303,4 +312,8 @@ ol.commentlist{
 .pagination{
    flex-direction: column;
    text-align: center;
+}
+
+.archive-title{
+    text-transform: uppercase;
 }
