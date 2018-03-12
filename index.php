@@ -1,8 +1,10 @@
 <?php get_header();?>
+   <?php motoPressSlider( "home-slider" ) ?>
     <div class="container">
     <div class="row">
 
         <div class="col-sm-9 blog-main index">
+           
             <?php 
                 if(have_posts()){
                     while(have_posts()){

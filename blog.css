@@ -60,9 +60,9 @@ ul{
  */
 
 .blog-masthead {
+    z-index:2;
     position:fixed;
     top:0;
-    z-index:1;
     width:100%;
     padding:0.8rem;
     text-transform: uppercase;
@@ -320,4 +320,8 @@ ol.commentlist{
 
 .archive-title{
     text-transform: uppercase;
+}
+
+.motoslider_wrapper{
+    margin-top:38px;
 }
