@@ -1,23 +1,17 @@
 <?php get_header();?>
-    
-    <div class="blog-header">
-       <div class="container">
-           <h1 class="blog-title"><a href="<?php  echo get_page_link(220); ?>"><?php bloginfo("name"); ?></a></h1>
-            <p class="lead blog-description"><?php bloginfo("description")?></p>
-        </div>
-    </div>
-    
     <div class="container">
     <div class="row">
 
-        <div class="col-sm-9 blog-main">
+        <div class="col-sm-9 blog-main single">
             <?php 
                 while(have_posts()){
                     the_post();
             ?>
-            <div class="blog-post">
+            <div <?php post_class("blog-post"); ?>>
                 <h2 class="blog-post-title"><?php the_title();?></h2>
-                <p class="blog-post-meta"><?php echo get_the_date();?> by <a href="<?php the_permalink();?>"><?php the_author();?></a></p>
+                <p class="blog-post-meta"><?php echo get_the_date();?> by <?php the_author_posts_link();?></p>
+                <p><span>Categories:</span> <?php the_category(", ");?></p>
+                <p><?php the_tags("<span>Tags:</span> ", ", ");?></p>
                 <hr>
                 <p><?php the_content();?></p>
             </div>

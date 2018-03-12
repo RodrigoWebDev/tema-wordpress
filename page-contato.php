@@ -1,14 +1,9 @@
 <?php get_header();
 ?>
-   <div class="blog-header">
-       <div class="container">
-            <h1 class="blog-title"><?php the_title();?></h1>
-        </div>
-    </div>
     <div class="container">
     <div class="row">
 
-        <div class="col-sm-9 blog-main">
+        <div class="col-sm-9 blog-main contact">
             <?php 
                 if(have_posts()){
                     while(have_posts()){

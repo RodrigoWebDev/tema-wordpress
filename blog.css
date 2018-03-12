@@ -269,6 +269,10 @@ form input, form button{
 }
 
 form input{
+    box-shadow:3px 1px 20px silver;
+}
+
+form input{
     border-radius:2px;
     padding-left:10px;
 }
