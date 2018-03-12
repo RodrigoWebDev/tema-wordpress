@@ -1,5 +1,9 @@
 /*
  * Globals
+ *CORES
+ -------
+ ROXO: #9b59b6;
+ ROXO ESCURO: #8e44ad;
  */
 
 body {
@@ -269,10 +273,6 @@ form input, form button{
 }
 
 form input{
-    box-shadow:3px 1px 20px silver;
-}
-
-form input{
     border-radius:2px;
     padding-left:10px;
 }
@@ -282,6 +282,10 @@ form button{
     border-top-right-radius:2px;
     margin-left:-6px;
     cursor:pointer;
+}
+
+.search-form form input{
+    box-shadow:3px 1px 20px silver;
 }
 
 /*Comentarios*/
@@ -325,3 +329,25 @@ ol.commentlist{
 .motoslider_wrapper{
     margin-top:38px;
 }
+
+/*Contact FORM*/
+
+.wpcf7-form input, .wpcf7-form textarea{
+    background:white;
+    border:1px solid silver;
+}
+
+.wpcf7-form input[type="submit"]{
+    background:#8e44ad;
+    color:white;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.wpcf7-form input[type="submit"]:hover{
+    background:#9b59b6;
+    transition:.2s;
+}
+
+
+

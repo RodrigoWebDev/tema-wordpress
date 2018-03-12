@@ -1,5 +1,5 @@
 <footer class="blog-footer">
-    <p><a href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank">Dev ninja</a> Wordpress blog template</p>
+    <p><a href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank">Dev ninja</a> Minimalist blog template</p>
     <p>
         <a href="#">Back to top</a>
     </p>

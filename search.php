@@ -4,7 +4,9 @@
 
         <div class="col-sm-9 blog-main search">
              <h1>Search results for: <?php echo get_search_query()?></h1>
-             <?php get_search_form(); ?>
+             <div class="search-form">
+                <?php get_search_form(); ?>
+             </div>
              <hr>
             <?php 
                 if(have_posts()){
