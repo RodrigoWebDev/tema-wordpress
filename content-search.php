@@ -6,5 +6,8 @@
     <?php
 	}
     ?>
-    <p><?php the_excerpt();?></p>
+    <div class="post-content">
+        <p ><?php the_excerpt();?></p>
+    </div>
+   
 </div>

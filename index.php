@@ -3,7 +3,7 @@
     <div class="container">
     <div class="row">
 
-        <div class="col-sm-9 blog-main index">
+        <div class="col-md-9 blog-main index">
            
             <?php 
                 if(have_posts()){

@@ -2,7 +2,7 @@
     <div class="container">
     <div class="row">
 
-        <div class="col-sm-9 blog-main single">
+        <div class="col-md-9 blog-main single">
             <?php 
                 while(have_posts()){
                     the_post();
@@ -13,7 +13,9 @@
                 <p><span>Categories:</span> <?php the_category(", ");?></p>
                 <p><?php the_tags("<span>Tags:</span> ", ", ");?></p>
                 <hr>
-                <p><?php the_content();?></p>
+                <div class="post-content">
+                    <p><?php the_content();?></p>
+                </div>
             </div>
              <div class="pager">
                 <div>

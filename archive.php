@@ -2,7 +2,7 @@
     <div class="container">
     <div class="row">
 
-        <div class="col-sm-9 blog-main archive">
+        <div class="col-md-9 blog-main archive">
             <?php 
                 the_archive_title("<h1 class='archive-title'>","</h1>");
                 the_archive_description();

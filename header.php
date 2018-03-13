@@ -22,7 +22,10 @@
     <div class="blog-masthead">
        <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-6 col-md-3">
+                    <h1><a href="<?php echo get_page_link(220);?>"><?php bloginfo("name");?></h1></a>
+                </div>
+                <div class="col-md-6 nav">
                    <?php wp_nav_menu(array(
                         "menu_class" => "container",
                         "container" => "nav",
@@ -30,9 +33,21 @@
                         "theme_location" => "meu-menu",
                     ));?>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-6 nav-mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="col-sm-12 col-md-3 search-form-top">
                     <?php get_search_form();?>
                 </div>
+            </div>
+            <div class="accordion">
+               <?php get_search_form();?>
+               <?php wp_nav_menu(array(
+                    "menu_class" => "container",
+                    "container" => "nav",
+                    "container_class" => "blog-nav",
+                    "theme_location" => "meu-menu",
+                ));?>
             </div>
         </div>
     </div>

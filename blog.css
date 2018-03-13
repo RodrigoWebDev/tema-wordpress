@@ -5,6 +5,7 @@
  ROXO: #9b59b6;
  ROXO ESCURO: #8e44ad;
  */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 body {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -58,7 +59,6 @@ ul{
     }
 }
 
-
 /*
  * Masthead for nav
  */
@@ -75,15 +75,91 @@ ul{
     box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
 }
 
+.search-form-top form{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.blog-masthead h1{
+    color:white;
+    font-size:15px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom:0;
+}
+
+.blog-masthead .col-sm-12, .blog-masthead .col-md-3{
+    padding:0;
+}
+
+.blog-masthead h1 a{
+    color:white;
+    opacity:0.5;
+    transition:.2s;
+    text-decoration:none; 
+}
+
+.blog-masthead h1 a:hover{
+    opacity:1;
+}
+
 .blog-masthead div{
     align-items:center;
 }
 
+/* NAV MOBILE */
+
+.nav-mobile{
+    display:none;
+    justify-content: flex-end;
+    position:relative;
+}
+
+.nav-mobile svg{
+    color:white;
+    cursor:pointer;
+    font-size:1.5rem;
+}
+
+.nav-mobile svg:hover{
+    opacity:0.8;
+}
+
+.accordion{
+    padding:1rem;
+    display:none;
+    position:absolute;
+    background:#57606f;
+    width:100%;
+    top:50px;
+    left:0;
+}
+
+.accordion .blog-nav ul{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:0;
+}
+
+.accordion .blog-nav li{
+   margin-bottom:1rem;
+}
+
+.accordion .blog-nav a{
+    color:white;
+}
+
+.accordion form{
+    text-align:center;
+    margin-bottom:1rem;
+}
 
 /* Nav links */
 
-.blog-nav li {
-    display: inline;
+.blog-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
 }
 
 .blog-nav-item {
@@ -206,6 +282,10 @@ ul{
 .blog-post-meta {
     margin-bottom: 20px;
     color: #999;
+}
+
+.map{
+    width:100%;
 }
 
 
@@ -347,6 +427,67 @@ ol.commentlist{
 .wpcf7-form input[type="submit"]:hover{
     background:#9b59b6;
     transition:.2s;
+}
+
+@media (max-width:782px){
+    .motoslider_wrapper{
+        margin-top:24px;
+    }
+}
+
+@media (max-width:767px){
+    .blog-post,.blog-sidebar{
+        text-align:center;
+    }
+
+    #wp-calendar{
+        margin:0 auto;
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .nav-mobile{
+        display:flex;
+    }
+
+    .nav-mobile .accordion{
+        display:none;
+    }
+
+    .search-form-top{
+        display:none;
+    }
+     .motoslider_wrapper{
+        margin-top:4px;
+    }
+    .blog-post{
+        width:100%;
+    }
+
+    .post-content{
+        text-align:left !important;
+    }
+
+
+}
+
+@media (max-width:500px){
+    .slide-title{
+    font-size:1rem !important;
+    padding:1rem !important;
+   }
+   .slide-content{
+    display:none !important;
+   }
+}
+
+@media (max-width:440px){
+    .blog-masthead h1{
+        font-size:10px;
+    }
+
 }
 
 

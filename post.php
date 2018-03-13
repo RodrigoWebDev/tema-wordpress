@@ -1,4 +1,4 @@
-<div <?php post_class("blog-post");?>>
+<div <?php post_class("blog-post");?> >
     <div class="post-image">
         <a href="<?php the_permalink(); ?>">
             <?php the_post_thumbnail(); ?>
@@ -19,8 +19,10 @@
     </p>
     <p>
         <?php the_tags("<span>Tags:</span> ", ", ");?></p>
+    <div class="post-content">
     <p>
         <?php the_excerpt();?>
     </p>
+    </div>
     <hr>
 </div>
