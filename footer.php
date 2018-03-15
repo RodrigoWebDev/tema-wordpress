@@ -1,5 +1,10 @@
 <footer class="blog-footer">
     <p><a href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank">Dev ninja</a> Minimalist blog template</p>
+    <?php 
+    	if(is_active_sidebar("social-medias")){
+    		dynamic_sidebar("social-medias");
+    	}
+    ?>
     <p>
         <a href="#">Back to top</a>
     </p>

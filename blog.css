@@ -490,5 +490,22 @@ ol.commentlist{
 
 }
 
+.icons-medium{
+    display:flex;
+    justify-content: center
+}
+
+.icons-medium li{
+    margin:0 0.5rem;
+}
+
+.icons-medium li:hover{
+    opacity:0.5;
+}
+
+.icons-medium li img{
+    border-radius:3px;
+}
+
 
 

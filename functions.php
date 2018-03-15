@@ -15,6 +15,15 @@ if (function_exists("register_sidebar")){
         "before_title" => "<h4>",
         "after_title" => "</h4>"
     ));
+     register_sidebar(
+        array(
+            'name' => 'Redes Sociais',
+            'id' => 'social-medias',
+            'description' => 'Icones das redes sociais',
+            'before_widget' => '<div class="social-media">',
+        )
+    );
+
 }
 
 add_theme_support("post-thumbnails");
