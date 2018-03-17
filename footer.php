@@ -1,10 +1,12 @@
 <footer class="blog-footer">
-    <p><a href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank">Dev ninja</a> Minimalist blog template</p>
+    <p><?php echo get_theme_mod("set_copyright"); ?></p>
+    <p>Theme developed by <a href="https://rodrigowebdev.github.io/devninja.github.io/">Dev Ninja</a></p>
     <?php 
     	if(is_active_sidebar("social-medias")){
     		dynamic_sidebar("social-medias");
     	}
     ?>
+
     <p>
         <a href="#">Back to top</a>
     </p>
